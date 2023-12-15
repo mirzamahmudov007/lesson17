@@ -644,6 +644,8 @@ line-height: 32px; /* 133.333% */
 
 
 .portfolio{
+
+    margin-top: 80px;
     .container{
         display: block;
     }
@@ -688,11 +690,14 @@ line-height: 32px; /* 200% */
     }
 
     &__list{
+        margin-top: 30px;
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
 
         &__item{
+            width: 50%;
             list-style: none;
             h2{
                 color: #333;
@@ -722,4 +727,10 @@ line-height: 32px; /* 200% */
     }
 
 
+}
+
+@media only screen and (max-width:650px) {
+    .portfolio__list__item{
+        width: auto;
+    }
 }

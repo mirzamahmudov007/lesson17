@@ -500,6 +500,9 @@
     width: 100%;
   }
 }
+.portfolio {
+  margin-top: 80px;
+}
 .portfolio .container {
   display: block;
 }
@@ -541,11 +544,14 @@
   line-height: 32px; /* 200% */
 }
 .portfolio__list {
+  margin-top: 30px;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 .portfolio__list__item {
+  width: 50%;
   list-style: none;
 }
 .portfolio__list__item h2 {
@@ -571,4 +577,10 @@
 }
 .portfolio__list__item img {
   width: 100%;
+}
+
+@media only screen and (max-width: 650px) {
+  .portfolio__list__item {
+    width: auto;
+  }
 }/*# sourceMappingURL=style.css.map */
