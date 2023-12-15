@@ -491,12 +491,13 @@
   }
   .feature__list__item__text {
     font-size: 20px;
-    line-height: 20px;
+    line-height: 30px;
   }
   .feature__list__item__icon {
+    padding: 10px;
     margin-top: 30px;
     font-size: 16px;
-    height: 130px;
+    height: 150px;
     width: 100%;
   }
 }
@@ -582,5 +583,8 @@
 @media only screen and (max-width: 650px) {
   .portfolio__list__item {
     width: auto;
+  }
+  .abc {
+    font-size: 16px;
   }
 }/*# sourceMappingURL=style.css.map */
