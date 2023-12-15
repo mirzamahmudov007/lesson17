@@ -404,7 +404,7 @@ flex-shrink: 0;
 border-radius: 8px;
 border: 1px solid #E6EDF5;
 background: #FFF;
-padding: 32px 0px 35px 32px;
+padding: 32px 32px 35px 32px;
 
 h2{
     margin-top: 89px;
@@ -435,4 +435,200 @@ p{
         width: 100%;
         margin-top: 30px;
     }
+}
+
+.feature{
+   margin-top: 50px;
+    
+    &__icon{
+        display: flex;
+        align-items: center;
+        p{
+            color: #F07566;
+font-family: Hind Siliguri;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 32px; /* 200% */
+letter-spacing: 1px;
+margin-left: 20px;
+text-transform: uppercase;
+        }
+    }
+
+    &__list{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        list-style: none;
+        justify-content: space-between;
+
+        &__item{
+            width: 470px;
+// height: 96px;
+flex-shrink: 0;
+         &__title{
+            color: #333;
+font-family: Hind Siliguri;
+font-size: 56px;
+font-style: normal;
+font-weight: 700;
+line-height: 64px; /* 114.286% */
+letter-spacing: -1px;
+         } 
+         &__text{
+            color: #333;
+font-family: Work Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 32px; /* 200% */
+         }
+
+         &__icon{
+            width: 470px;
+height: 144px;
+flex-shrink: 0;
+border-radius: 8px;
+background: #FFF;
+box-shadow: 0px 24px 48px 0px rgba(0, 17, 86, 0.08);
+display: flex;
+flex-direction: column;
+// align-items: center;
+justify-content: center;
+padding: 25px 32px 26px 32px;
+         }
+
+         img{
+            width: 100%;
+         }
+         &__none{
+            display: none;
+         }
+        }
+    }
+
+    .star{
+        display: flex;
+        align-items: center;
+        p{
+            margin-left: 20px;
+        }
+    }
+
+
+}
+
+
+@media only screen and (max-width:1200px){
+    .feature{
+        &__list{
+            &__item{
+                &:nth-child(1){
+                    display: none;
+                }
+                width: 400px;
+                &__title{
+                    line-height: 40px;
+                    font-size: 48px;
+                    margin-bottom: 20px;
+                }
+                &__text{
+                    line-height: 20px;
+                }
+                &__icon{
+                    height: 100px;
+                    width: 400px;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (max-width:1000px){
+    .feature{
+        &__list{
+            display: block;
+            &__item{
+                width: 100%;
+                &__title{
+                    line-height: 60px;
+                    font-size: 70px;
+                    margin-bottom: 20px;
+                }
+                &__text{
+                    font-size: 20px;
+                    line-height: 20px;
+                }
+                &__icon{
+                    margin-top: 30px;
+                    font-size: 20px;
+                    height: 130px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .feature__list__item:nth-child(1){
+        display: block;
+    }
+    .feature__list__item:nth-child(3){
+        display: none;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .feature{
+        &__list{
+            display: block;
+            &__item{
+                width: 100%;
+                &__title{
+                    line-height: 60px;
+                    font-size: 60px;
+                    margin-bottom: 20px;
+                }
+                &__text{
+                    font-size: 20px;
+                    line-height: 20px;
+                }
+                &__icon{
+                    margin-top: 30px;
+                    font-size: 20px;
+                    height: 130px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    
+}
+
+@media only screen and (max-width:600px){
+    .feature{
+        &__list{
+            display: block;
+            &__item{
+                width: 100%;
+                &__title{
+                    line-height: 40px;
+                    font-size: 40px;
+                    margin-bottom: 20px;
+                }
+                &__text{
+                    font-size: 20px;
+                    line-height: 20px;
+                }
+                &__icon{
+                    margin-top: 30px;
+                    font-size: 20px;
+                    height: 130px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    
 }
